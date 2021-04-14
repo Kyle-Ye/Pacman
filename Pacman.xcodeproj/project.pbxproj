@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2726A564261DCBE400ED177C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A563261DCBE400ED177C /* AppDelegate.swift */; };
+		2726A566261DCBE400ED177C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2726A565261DCBE400ED177C /* GameScene.sks */; };
+		2726A56A261DCBE400ED177C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A569261DCBE400ED177C /* GameScene.swift */; };
+		2726A56C261DCBE400ED177C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A56B261DCBE400ED177C /* ViewController.swift */; };
+		2726A56E261DCBE500ED177C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2726A56D261DCBE500ED177C /* Assets.xcassets */; };
+		2726A571261DCBE500ED177C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2726A56F261DCBE500ED177C /* Main.storyboard */; };
+		2726A57D261DCBE500ED177C /* PacmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A57C261DCBE500ED177C /* PacmanTests.swift */; };
+		2726A588261DCBE500ED177C /* PacmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A587261DCBE500ED177C /* PacmanUITests.swift */; };
+		2726A598261DCDCA00ED177C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A597261DCDCA00ED177C /* Game.swift */; };
+		2726A59F261DCED800ED177C /* Pinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59A261DCED800ED177C /* Pinky.swift */; };
+		2726A5A0261DCED800ED177C /* Blinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59B261DCED800ED177C /* Blinky.swift */; };
+		2726A5A1261DCED800ED177C /* Clyde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59C261DCED800ED177C /* Clyde.swift */; };
+		2726A5A2261DCED800ED177C /* Inky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59D261DCED800ED177C /* Inky.swift */; };
+		2726A5A3261DCED800ED177C /* PacMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59E261DCED800ED177C /* PacMan.swift */; };
+		2726A5A5261DCEED00ED177C /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5A4261DCEED00ED177C /* Figure.swift */; };
+		2726A5A7261DCEF900ED177C /* Ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5A6261DCEF900ED177C /* Ghost.swift */; };
+		2726A5B0261DCFF200ED177C /* MazeShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5AC261DCFF200ED177C /* MazeShape.swift */; };
+		2726A5B1261DCFF200ED177C /* GhostShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5AD261DCFF200ED177C /* GhostShape.swift */; };
+		2726A5B2261DCFF200ED177C /* PacManShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5AE261DCFF200ED177C /* PacManShape.swift */; };
+		2726A5B3261DCFF200ED177C /* GridShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5AF261DCFF200ED177C /* GridShape.swift */; };
+		2726A5B5261DD10400ED177C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5B4261DD10400ED177C /* Shape.swift */; };
+		2726A5BF261DD26000ED177C /* Autopilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5B7261DD26000ED177C /* Autopilot.swift */; };
+		2726A5C0261DD26000ED177C /* Pellet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5B8261DD26000ED177C /* Pellet.swift */; };
+		2726A5C1261DD26000ED177C /* Lives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5B9261DD26000ED177C /* Lives.swift */; };
+		2726A5C2261DD26000ED177C /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BA261DD26000ED177C /* Maze.swift */; };
+		2726A5C3261DD26000ED177C /* Energizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BB261DD26000ED177C /* Energizer.swift */; };
+		2726A5C4261DD26000ED177C /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BC261DD26000ED177C /* Dot.swift */; };
+		2726A5C5261DD26000ED177C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BD261DD26000ED177C /* Display.swift */; };
+		2726A5C6261DD26000ED177C /* Pellets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BE261DD26000ED177C /* Pellets.swift */; };
+		2726A5C8261DD29500ED177C /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5C7261DD29500ED177C /* Particle.sks */; };
+		27D65BBB26270CEF004D8ED5 /* arcade_r.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5CA261DD2C000ED177C /* arcade_r.ttf */; };
+		27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D65BC826272038004D8ED5 /* AudioTests.swift */; };
+		27D65BD5262720DB004D8ED5 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D65BD4262720DB004D8ED5 /* AudioUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2726A579261DCBE500ED177C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2726A558261DCBE400ED177C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2726A55F261DCBE400ED177C;
+			remoteInfo = Pacman;
+		};
+		2726A584261DCBE500ED177C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2726A558261DCBE400ED177C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2726A55F261DCBE400ED177C;
+			remoteInfo = Pacman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2726A560261DCBE400ED177C /* Pacman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2726A563261DCBE400ED177C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2726A565261DCBE400ED177C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2726A569261DCBE400ED177C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2726A56B261DCBE400ED177C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2726A56D261DCBE500ED177C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2726A570261DCBE500ED177C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2726A572261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2726A573261DCBE500ED177C /* Pacman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pacman.entitlements; sourceTree = "<group>"; };
+		2726A578261DCBE500ED177C /* PacmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2726A57C261DCBE500ED177C /* PacmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanTests.swift; sourceTree = "<group>"; };
+		2726A57E261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2726A583261DCBE500ED177C /* PacmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2726A587261DCBE500ED177C /* PacmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanUITests.swift; sourceTree = "<group>"; };
+		2726A589261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2726A597261DCDCA00ED177C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2726A59A261DCED800ED177C /* Pinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinky.swift; sourceTree = "<group>"; };
+		2726A59B261DCED800ED177C /* Blinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blinky.swift; sourceTree = "<group>"; };
+		2726A59C261DCED800ED177C /* Clyde.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clyde.swift; sourceTree = "<group>"; };
+		2726A59D261DCED800ED177C /* Inky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inky.swift; sourceTree = "<group>"; };
+		2726A59E261DCED800ED177C /* PacMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacMan.swift; sourceTree = "<group>"; };
+		2726A5A4261DCEED00ED177C /* Figure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
+		2726A5A6261DCEF900ED177C /* Ghost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ghost.swift; sourceTree = "<group>"; };
+		2726A5AC261DCFF200ED177C /* MazeShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeShape.swift; sourceTree = "<group>"; };
+		2726A5AD261DCFF200ED177C /* GhostShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostShape.swift; sourceTree = "<group>"; };
+		2726A5AE261DCFF200ED177C /* PacManShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacManShape.swift; sourceTree = "<group>"; };
+		2726A5AF261DCFF200ED177C /* GridShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridShape.swift; sourceTree = "<group>"; };
+		2726A5B4261DD10400ED177C /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		2726A5B7261DD26000ED177C /* Autopilot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autopilot.swift; sourceTree = "<group>"; };
+		2726A5B8261DD26000ED177C /* Pellet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pellet.swift; sourceTree = "<group>"; };
+		2726A5B9261DD26000ED177C /* Lives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lives.swift; sourceTree = "<group>"; };
+		2726A5BA261DD26000ED177C /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		2726A5BB261DD26000ED177C /* Energizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Energizer.swift; sourceTree = "<group>"; };
+		2726A5BC261DD26000ED177C /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		2726A5BD261DD26000ED177C /* Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		2726A5BE261DD26000ED177C /* Pellets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pellets.swift; sourceTree = "<group>"; };
+		2726A5C7261DD29500ED177C /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Particle.sks; sourceTree = "<group>"; };
+		2726A5CA261DD2C000ED177C /* arcade_r.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcade_r.ttf; sourceTree = "<group>"; };
+		27D65BC826272038004D8ED5 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
+		27D65BD4262720DB004D8ED5 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2726A55D261DCBE400ED177C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A575261DCBE500ED177C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A580261DCBE500ED177C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2726A557261DCBE400ED177C = {
+			isa = PBXGroup;
+			children = (
+				2726A562261DCBE400ED177C /* Pacman */,
+				2726A57B261DCBE500ED177C /* PacmanTests */,
+				2726A586261DCBE500ED177C /* PacmanUITests */,
+				2726A561261DCBE400ED177C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2726A561261DCBE400ED177C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2726A560261DCBE400ED177C /* Pacman.app */,
+				2726A578261DCBE500ED177C /* PacmanTests.xctest */,
+				2726A583261DCBE500ED177C /* PacmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2726A562261DCBE400ED177C /* Pacman */ = {
+			isa = PBXGroup;
+			children = (
+				2726A5C9261DD2BA00ED177C /* Resources */,
+				2726A595261DCD5A00ED177C /* Bootstrap */,
+				2726A596261DCDB000ED177C /* Game */,
+				2726A5B6261DD25200ED177C /* Other */,
+				2726A56F261DCBE500ED177C /* Main.storyboard */,
+				2726A572261DCBE500ED177C /* Info.plist */,
+				2726A573261DCBE500ED177C /* Pacman.entitlements */,
+			);
+			path = Pacman;
+			sourceTree = "<group>";
+		};
+		2726A57B261DCBE500ED177C /* PacmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2726A57C261DCBE500ED177C /* PacmanTests.swift */,
+				27D65BC826272038004D8ED5 /* AudioTests.swift */,
+				2726A57E261DCBE500ED177C /* Info.plist */,
+			);
+			path = PacmanTests;
+			sourceTree = "<group>";
+		};
+		2726A586261DCBE500ED177C /* PacmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2726A587261DCBE500ED177C /* PacmanUITests.swift */,
+				2726A589261DCBE500ED177C /* Info.plist */,
+			);
+			path = PacmanUITests;
+			sourceTree = "<group>";
+		};
+		2726A595261DCD5A00ED177C /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				2726A563261DCBE400ED177C /* AppDelegate.swift */,
+				2726A56B261DCBE400ED177C /* ViewController.swift */,
+				2726A569261DCBE400ED177C /* GameScene.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		2726A596261DCDB000ED177C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2726A597261DCDCA00ED177C /* Game.swift */,
+				27D65BD3262720CF004D8ED5 /* Audio */,
+				2726A599261DCEB800ED177C /* Figures */,
+				2726A5AB261DCFE700ED177C /* Shapes */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		2726A599261DCEB800ED177C /* Figures */ = {
+			isa = PBXGroup;
+			children = (
+				2726A5A4261DCEED00ED177C /* Figure.swift */,
+				2726A5A8261DCF9300ED177C /* Pacman */,
+				2726A5A9261DCFA000ED177C /* Ghost */,
+			);
+			path = Figures;
+			sourceTree = "<group>";
+		};
+		2726A5A8261DCF9300ED177C /* Pacman */ = {
+			isa = PBXGroup;
+			children = (
+				2726A59E261DCED800ED177C /* PacMan.swift */,
+			);
+			path = Pacman;
+			sourceTree = "<group>";
+		};
+		2726A5A9261DCFA000ED177C /* Ghost */ = {
+			isa = PBXGroup;
+			children = (
+				2726A5A6261DCEF900ED177C /* Ghost.swift */,
+				2726A59B261DCED800ED177C /* Blinky.swift */,
+				2726A59C261DCED800ED177C /* Clyde.swift */,
+				2726A59D261DCED800ED177C /* Inky.swift */,
+				2726A59A261DCED800ED177C /* Pinky.swift */,
+			);
+			path = Ghost;
+			sourceTree = "<group>";
+		};
+		2726A5AB261DCFE700ED177C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				2726A5B4261DD10400ED177C /* Shape.swift */,
+				2726A5AE261DCFF200ED177C /* PacManShape.swift */,
+				2726A5AD261DCFF200ED177C /* GhostShape.swift */,
+				2726A5AF261DCFF200ED177C /* GridShape.swift */,
+				2726A5AC261DCFF200ED177C /* MazeShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		2726A5B6261DD25200ED177C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2726A5B7261DD26000ED177C /* Autopilot.swift */,
+				2726A5BD261DD26000ED177C /* Display.swift */,
+				2726A5BC261DD26000ED177C /* Dot.swift */,
+				2726A5BB261DD26000ED177C /* Energizer.swift */,
+				2726A5B9261DD26000ED177C /* Lives.swift */,
+				2726A5BA261DD26000ED177C /* Maze.swift */,
+				2726A5B8261DD26000ED177C /* Pellet.swift */,
+				2726A5BE261DD26000ED177C /* Pellets.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2726A5C9261DD2BA00ED177C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2726A565261DCBE400ED177C /* GameScene.sks */,
+				2726A5C7261DD29500ED177C /* Particle.sks */,
+				2726A5CA261DD2C000ED177C /* arcade_r.ttf */,
+				2726A56D261DCBE500ED177C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27D65BD3262720CF004D8ED5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				27D65BD4262720DB004D8ED5 /* AudioUtil.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2726A55F261DCBE400ED177C /* Pacman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2726A58C261DCBE500ED177C /* Build configuration list for PBXNativeTarget "Pacman" */;
+			buildPhases = (
+				2726A55C261DCBE400ED177C /* Sources */,
+				2726A55D261DCBE400ED177C /* Frameworks */,
+				2726A55E261DCBE400ED177C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pacman;
+			productName = Pacman;
+			productReference = 2726A560261DCBE400ED177C /* Pacman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2726A577261DCBE500ED177C /* PacmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2726A58F261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanTests" */;
+			buildPhases = (
+				2726A574261DCBE500ED177C /* Sources */,
+				2726A575261DCBE500ED177C /* Frameworks */,
+				2726A576261DCBE500ED177C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2726A57A261DCBE500ED177C /* PBXTargetDependency */,
+			);
+			name = PacmanTests;
+			productName = PacmanTests;
+			productReference = 2726A578261DCBE500ED177C /* PacmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2726A582261DCBE500ED177C /* PacmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2726A592261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanUITests" */;
+			buildPhases = (
+				2726A57F261DCBE500ED177C /* Sources */,
+				2726A580261DCBE500ED177C /* Frameworks */,
+				2726A581261DCBE500ED177C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2726A585261DCBE500ED177C /* PBXTargetDependency */,
+			);
+			name = PacmanUITests;
+			productName = PacmanUITests;
+			productReference = 2726A583261DCBE500ED177C /* PacmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2726A558261DCBE400ED177C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2726A55F261DCBE400ED177C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					2726A577261DCBE500ED177C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 2726A55F261DCBE400ED177C;
+					};
+					2726A582261DCBE500ED177C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 2726A55F261DCBE400ED177C;
+					};
+				};
+			};
+			buildConfigurationList = 2726A55B261DCBE400ED177C /* Build configuration list for PBXProject "Pacman" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2726A557261DCBE400ED177C;
+			productRefGroup = 2726A561261DCBE400ED177C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2726A55F261DCBE400ED177C /* Pacman */,
+				2726A577261DCBE500ED177C /* PacmanTests */,
+				2726A582261DCBE500ED177C /* PacmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2726A55E261DCBE400ED177C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D65BBB26270CEF004D8ED5 /* arcade_r.ttf in Resources */,
+				2726A5C8261DD29500ED177C /* Particle.sks in Resources */,
+				2726A566261DCBE400ED177C /* GameScene.sks in Resources */,
+				2726A56E261DCBE500ED177C /* Assets.xcassets in Resources */,
+				2726A571261DCBE500ED177C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A576261DCBE500ED177C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A581261DCBE500ED177C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2726A55C261DCBE400ED177C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2726A5A2261DCED800ED177C /* Inky.swift in Sources */,
+				2726A5C6261DD26000ED177C /* Pellets.swift in Sources */,
+				2726A5C4261DD26000ED177C /* Dot.swift in Sources */,
+				2726A5B2261DCFF200ED177C /* PacManShape.swift in Sources */,
+				2726A56C261DCBE400ED177C /* ViewController.swift in Sources */,
+				2726A59F261DCED800ED177C /* Pinky.swift in Sources */,
+				2726A5BF261DD26000ED177C /* Autopilot.swift in Sources */,
+				2726A5A5261DCEED00ED177C /* Figure.swift in Sources */,
+				2726A5C1261DD26000ED177C /* Lives.swift in Sources */,
+				2726A5B0261DCFF200ED177C /* MazeShape.swift in Sources */,
+				2726A5C0261DD26000ED177C /* Pellet.swift in Sources */,
+				2726A5A7261DCEF900ED177C /* Ghost.swift in Sources */,
+				2726A5C5261DD26000ED177C /* Display.swift in Sources */,
+				2726A5B5261DD10400ED177C /* Shape.swift in Sources */,
+				27D65BD5262720DB004D8ED5 /* AudioUtil.swift in Sources */,
+				2726A5C3261DD26000ED177C /* Energizer.swift in Sources */,
+				2726A5B3261DCFF200ED177C /* GridShape.swift in Sources */,
+				2726A5B1261DCFF200ED177C /* GhostShape.swift in Sources */,
+				2726A56A261DCBE400ED177C /* GameScene.swift in Sources */,
+				2726A5C2261DD26000ED177C /* Maze.swift in Sources */,
+				2726A564261DCBE400ED177C /* AppDelegate.swift in Sources */,
+				2726A5A1261DCED800ED177C /* Clyde.swift in Sources */,
+				2726A5A0261DCED800ED177C /* Blinky.swift in Sources */,
+				2726A5A3261DCED800ED177C /* PacMan.swift in Sources */,
+				2726A598261DCDCA00ED177C /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A574261DCBE500ED177C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2726A57D261DCBE500ED177C /* PacmanTests.swift in Sources */,
+				27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2726A57F261DCBE500ED177C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2726A588261DCBE500ED177C /* PacmanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2726A57A261DCBE500ED177C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2726A55F261DCBE400ED177C /* Pacman */;
+			targetProxy = 2726A579261DCBE500ED177C /* PBXContainerItemProxy */;
+		};
+		2726A585261DCBE500ED177C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2726A55F261DCBE400ED177C /* Pacman */;
+			targetProxy = 2726A584261DCBE500ED177C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2726A56F261DCBE500ED177C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2726A570261DCBE500ED177C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2726A58A261DCBE500ED177C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2726A58B261DCBE500ED177C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2726A58D261DCBE500ED177C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pacman/Pacman.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Pacman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.Pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2726A58E261DCBE500ED177C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pacman/Pacman.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Pacman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.Pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2726A590261DCBE500ED177C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				INFOPLIST_FILE = PacmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pacman.app/Contents/MacOS/Pacman";
+			};
+			name = Debug;
+		};
+		2726A591261DCBE500ED177C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				INFOPLIST_FILE = PacmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pacman.app/Contents/MacOS/Pacman";
+			};
+			name = Release;
+		};
+		2726A593261DCBE500ED177C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				INFOPLIST_FILE = PacmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Pacman;
+			};
+			name = Debug;
+		};
+		2726A594261DCBE500ED177C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VB7MJ8R223;
+				INFOPLIST_FILE = PacmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Pacman;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2726A55B261DCBE400ED177C /* Build configuration list for PBXProject "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2726A58A261DCBE500ED177C /* Debug */,
+				2726A58B261DCBE500ED177C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2726A58C261DCBE500ED177C /* Build configuration list for PBXNativeTarget "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2726A58D261DCBE500ED177C /* Debug */,
+				2726A58E261DCBE500ED177C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2726A58F261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2726A590261DCBE500ED177C /* Debug */,
+				2726A591261DCBE500ED177C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2726A592261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2726A593261DCBE500ED177C /* Debug */,
+				2726A594261DCBE500ED177C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2726A558261DCBE400ED177C /* Project object */;
+}
