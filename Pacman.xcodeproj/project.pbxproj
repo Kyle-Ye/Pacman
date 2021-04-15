@@ -37,6 +37,7 @@
 		2726A5C5261DD26000ED177C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BD261DD26000ED177C /* Display.swift */; };
 		2726A5C6261DD26000ED177C /* Pellets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BE261DD26000ED177C /* Pellets.swift */; };
 		2726A5C8261DD29500ED177C /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5C7261DD29500ED177C /* Particle.sks */; };
+		27B36036262837AD00045F85 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B36035262837AD00045F85 /* FontTests.swift */; };
 		27D65BBB26270CEF004D8ED5 /* arcade_r.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5CA261DD2C000ED177C /* arcade_r.ttf */; };
 		27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D65BC826272038004D8ED5 /* AudioTests.swift */; };
 		27D65BD5262720DB004D8ED5 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D65BD4262720DB004D8ED5 /* AudioUtil.swift */; };
@@ -98,6 +99,7 @@
 		2726A5BE261DD26000ED177C /* Pellets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pellets.swift; sourceTree = "<group>"; };
 		2726A5C7261DD29500ED177C /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Particle.sks; sourceTree = "<group>"; };
 		2726A5CA261DD2C000ED177C /* arcade_r.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcade_r.ttf; sourceTree = "<group>"; };
+		27B36035262837AD00045F85 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
 		27D65BC826272038004D8ED5 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
 		27D65BD4262720DB004D8ED5 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 			children = (
 				2726A57C261DCBE500ED177C /* PacmanTests.swift */,
 				27D65BC826272038004D8ED5 /* AudioTests.swift */,
+				27B36035262837AD00045F85 /* FontTests.swift */,
 				2726A57E261DCBE500ED177C /* Info.plist */,
 			);
 			path = PacmanTests;
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2726A57D261DCBE500ED177C /* PacmanTests.swift in Sources */,
+				27B36036262837AD00045F85 /* FontTests.swift in Sources */,
 				27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +615,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.Pacman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -632,6 +637,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.Pacman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -652,7 +658,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -674,7 +680,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -695,6 +701,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -715,6 +722,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

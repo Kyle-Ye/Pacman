@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-class Figure: Hashable {
+class Figure {
     var tile = (x: 0, y: 0)
     var tileDelta = 0
     var direction: Direction
@@ -26,14 +26,6 @@ class Figure: Hashable {
 
         node.xScale = 2.0
         node.yScale = -2.0
-    }
-
-    static func == (lhs: Figure, rhs: Figure) -> Bool {
-        return lhs.name == rhs.name
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
     }
 
     func position() -> CGPoint {
@@ -68,5 +60,15 @@ class Figure: Hashable {
         speedPatternIndex = 0
         repetitionCount = 0
         tileDelta = 0
+    }
+}
+
+extension Figure: Hashable{
+    static func == (lhs: Figure, rhs: Figure) -> Bool {
+        return lhs.name == rhs.name
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
     }
 }
