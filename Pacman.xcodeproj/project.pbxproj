@@ -13,8 +13,7 @@
 		2726A56C261DCBE400ED177C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A56B261DCBE400ED177C /* ViewController.swift */; };
 		2726A56E261DCBE500ED177C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2726A56D261DCBE500ED177C /* Assets.xcassets */; };
 		2726A571261DCBE500ED177C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2726A56F261DCBE500ED177C /* Main.storyboard */; };
-		2726A57D261DCBE500ED177C /* PacmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A57C261DCBE500ED177C /* PacmanTests.swift */; };
-		2726A588261DCBE500ED177C /* PacmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A587261DCBE500ED177C /* PacmanUITests.swift */; };
+		2726A57D261DCBE500ED177C /* PacManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A57C261DCBE500ED177C /* PacManTests.swift */; };
 		2726A598261DCDCA00ED177C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A597261DCDCA00ED177C /* Game.swift */; };
 		2726A59F261DCED800ED177C /* Pinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59A261DCED800ED177C /* Pinky.swift */; };
 		2726A5A0261DCED800ED177C /* Blinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A59B261DCED800ED177C /* Blinky.swift */; };
@@ -37,6 +36,8 @@
 		2726A5C5261DD26000ED177C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BD261DD26000ED177C /* Display.swift */; };
 		2726A5C6261DD26000ED177C /* Pellets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2726A5BE261DD26000ED177C /* Pellets.swift */; };
 		2726A5C8261DD29500ED177C /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5C7261DD29500ED177C /* Particle.sks */; };
+		276E5E64262C699C001CB08C /* GhostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5E63262C699C001CB08C /* GhostTests.swift */; };
+		276E5E69262C69AE001CB08C /* PelletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5E68262C69AE001CB08C /* PelletTests.swift */; };
 		27B36036262837AD00045F85 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B36035262837AD00045F85 /* FontTests.swift */; };
 		27D65BBB26270CEF004D8ED5 /* arcade_r.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2726A5CA261DD2C000ED177C /* arcade_r.ttf */; };
 		27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D65BC826272038004D8ED5 /* AudioTests.swift */; };
@@ -45,13 +46,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		2726A579261DCBE500ED177C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2726A558261DCBE400ED177C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2726A55F261DCBE400ED177C;
-			remoteInfo = Pacman;
-		};
-		2726A584261DCBE500ED177C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2726A558261DCBE400ED177C /* Project object */;
 			proxyType = 1;
@@ -71,11 +65,8 @@
 		2726A572261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2726A573261DCBE500ED177C /* Pacman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pacman.entitlements; sourceTree = "<group>"; };
 		2726A578261DCBE500ED177C /* PacmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2726A57C261DCBE500ED177C /* PacmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanTests.swift; sourceTree = "<group>"; };
+		2726A57C261DCBE500ED177C /* PacManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacManTests.swift; sourceTree = "<group>"; };
 		2726A57E261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2726A583261DCBE500ED177C /* PacmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2726A587261DCBE500ED177C /* PacmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanUITests.swift; sourceTree = "<group>"; };
-		2726A589261DCBE500ED177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2726A597261DCDCA00ED177C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2726A59A261DCED800ED177C /* Pinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinky.swift; sourceTree = "<group>"; };
 		2726A59B261DCED800ED177C /* Blinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blinky.swift; sourceTree = "<group>"; };
@@ -99,6 +90,8 @@
 		2726A5BE261DD26000ED177C /* Pellets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pellets.swift; sourceTree = "<group>"; };
 		2726A5C7261DD29500ED177C /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Particle.sks; sourceTree = "<group>"; };
 		2726A5CA261DD2C000ED177C /* arcade_r.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcade_r.ttf; sourceTree = "<group>"; };
+		276E5E63262C699C001CB08C /* GhostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostTests.swift; sourceTree = "<group>"; };
+		276E5E68262C69AE001CB08C /* PelletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelletTests.swift; sourceTree = "<group>"; };
 		27B36035262837AD00045F85 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
 		27D65BC826272038004D8ED5 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
 		27D65BD4262720DB004D8ED5 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
@@ -119,13 +112,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2726A580261DCBE500ED177C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,7 +120,6 @@
 			children = (
 				2726A562261DCBE400ED177C /* Pacman */,
 				2726A57B261DCBE500ED177C /* PacmanTests */,
-				2726A586261DCBE500ED177C /* PacmanUITests */,
 				2726A561261DCBE400ED177C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,7 +129,6 @@
 			children = (
 				2726A560261DCBE400ED177C /* Pacman.app */,
 				2726A578261DCBE500ED177C /* PacmanTests.xctest */,
-				2726A583261DCBE500ED177C /* PacmanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,21 +150,14 @@
 		2726A57B261DCBE500ED177C /* PacmanTests */ = {
 			isa = PBXGroup;
 			children = (
-				2726A57C261DCBE500ED177C /* PacmanTests.swift */,
+				2726A57C261DCBE500ED177C /* PacManTests.swift */,
+				276E5E63262C699C001CB08C /* GhostTests.swift */,
+				276E5E68262C69AE001CB08C /* PelletTests.swift */,
 				27D65BC826272038004D8ED5 /* AudioTests.swift */,
 				27B36035262837AD00045F85 /* FontTests.swift */,
 				2726A57E261DCBE500ED177C /* Info.plist */,
 			);
 			path = PacmanTests;
-			sourceTree = "<group>";
-		};
-		2726A586261DCBE500ED177C /* PacmanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2726A587261DCBE500ED177C /* PacmanUITests.swift */,
-				2726A589261DCBE500ED177C /* Info.plist */,
-			);
-			path = PacmanUITests;
 			sourceTree = "<group>";
 		};
 		2726A595261DCD5A00ED177C /* Bootstrap */ = {
@@ -290,6 +267,7 @@
 				2726A55C261DCBE400ED177C /* Sources */,
 				2726A55D261DCBE400ED177C /* Frameworks */,
 				2726A55E261DCBE400ED177C /* Resources */,
+				2741BC39262917DD008710C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -318,24 +296,6 @@
 			productReference = 2726A578261DCBE500ED177C /* PacmanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2726A582261DCBE500ED177C /* PacmanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2726A592261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanUITests" */;
-			buildPhases = (
-				2726A57F261DCBE500ED177C /* Sources */,
-				2726A580261DCBE500ED177C /* Frameworks */,
-				2726A581261DCBE500ED177C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2726A585261DCBE500ED177C /* PBXTargetDependency */,
-			);
-			name = PacmanUITests;
-			productName = PacmanUITests;
-			productReference = 2726A583261DCBE500ED177C /* PacmanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,10 +309,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					2726A577261DCBE500ED177C = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 2726A55F261DCBE400ED177C;
-					};
-					2726A582261DCBE500ED177C = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 2726A55F261DCBE400ED177C;
 					};
@@ -373,7 +329,6 @@
 			targets = (
 				2726A55F261DCBE400ED177C /* Pacman */,
 				2726A577261DCBE500ED177C /* PacmanTests */,
-				2726A582261DCBE500ED177C /* PacmanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -398,14 +353,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2726A581261DCBE500ED177C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2741BC39262917DD008710C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2726A55C261DCBE400ED177C /* Sources */ = {
@@ -444,17 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2726A57D261DCBE500ED177C /* PacmanTests.swift in Sources */,
+				2726A57D261DCBE500ED177C /* PacManTests.swift in Sources */,
+				276E5E69262C69AE001CB08C /* PelletTests.swift in Sources */,
 				27B36036262837AD00045F85 /* FontTests.swift in Sources */,
 				27D65BC926272038004D8ED5 /* AudioTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2726A57F261DCBE500ED177C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2726A588261DCBE500ED177C /* PacmanUITests.swift in Sources */,
+				276E5E64262C699C001CB08C /* GhostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,11 +427,6 @@
 			isa = PBXTargetDependency;
 			target = 2726A55F261DCBE400ED177C /* Pacman */;
 			targetProxy = 2726A579261DCBE500ED177C /* PBXContainerItemProxy */;
-		};
-		2726A585261DCBE500ED177C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2726A55F261DCBE400ED177C /* Pacman */;
-			targetProxy = 2726A584261DCBE500ED177C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -688,48 +645,6 @@
 			};
 			name = Release;
 		};
-		2726A593261DCBE500ED177C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VB7MJ8R223;
-				INFOPLIST_FILE = PacmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Pacman;
-			};
-			name = Debug;
-		};
-		2726A594261DCBE500ED177C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VB7MJ8R223;
-				INFOPLIST_FILE = PacmanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = top.kyleye.PacmanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Pacman;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,15 +671,6 @@
 			buildConfigurations = (
 				2726A590261DCBE500ED177C /* Debug */,
 				2726A591261DCBE500ED177C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2726A592261DCBE500ED177C /* Build configuration list for PBXNativeTarget "PacmanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2726A593261DCBE500ED177C /* Debug */,
-				2726A594261DCBE500ED177C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
