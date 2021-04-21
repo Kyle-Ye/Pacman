@@ -83,14 +83,14 @@ class Game {
         "____________________________"
 
     let chaseScatterPattern = [
-        (Ghost.ControlSystem.scatter,  7 * 60),
-        (Ghost.ControlSystem.chase,   20 * 60),
-        (Ghost.ControlSystem.scatter,  7 * 60),
-        (Ghost.ControlSystem.chase,   20 * 60),
-        (Ghost.ControlSystem.scatter,  5 * 60),
+        (Ghost.ControlSystem.scatter, 7 * 60),
+        (Ghost.ControlSystem.chase, 20 * 60),
+        (Ghost.ControlSystem.scatter, 7 * 60),
+        (Ghost.ControlSystem.chase, 20 * 60),
+        (Ghost.ControlSystem.scatter, 5 * 60),
         (Ghost.ControlSystem.chase, 1033 * 60),
-        (Ghost.ControlSystem.scatter,  1 * 60),
-        (Ghost.ControlSystem.chase,        -1)] // Forever
+        (Ghost.ControlSystem.scatter, 1 * 60),
+        (Ghost.ControlSystem.chase, -1)] // Forever
     var chaseScatterPatternIndex = 0
     var chaseScatterTimer = 0
 
@@ -104,7 +104,7 @@ class Game {
     var randomNumberSeed: Int = 0
     var signalButtonAPressed = false
     var buttonAWasReleased = true
-    var otherGame: Game? = nil
+    var otherGame: Game?
     var isVersus = false
 
     // Figures
@@ -127,6 +127,7 @@ class Game {
             }
         }
     }
+
     var gameNode = SKNode() // Main node
 
     // State machine
@@ -238,7 +239,7 @@ class Game {
 
         .doneWithBestTime: StateTableEntry(maze: .show, pellets: .show, pacMan: .show,
                                            ghosts: .done, lives: .show, display: .doneWithBestTime,
-                                           duration: 6 * 60, nextState: .reset)
+                                           duration: 6 * 60, nextState: .reset),
     ]
 
     init() {
@@ -295,7 +296,7 @@ class Game {
 
     // State machine: Conditions
     func conditionButtonPressed() -> Bool { // First press, controller is mapped
-        if signalButtonAPressed  {
+        if signalButtonAPressed {
             if let otherGame = self.otherGame {
                 if otherGame.state == .waitOrPlay { // Does opponent want to play a versus?
                     isVersus = true
@@ -314,6 +315,10 @@ class Game {
             return true
         }
         if signalButtonAPressed {
+            let audio = AudioUtil.beginning
+            audio.preparePlayer()
+            audio.player.numberOfLoops = -1
+            audio.playAudio()
             signalButtonAPressed = false
             return true
         }
@@ -329,6 +334,7 @@ class Game {
         if signalPacManHit {
             signalPacManHit = false
             stateTable[.play]?.nextState = .die
+            AudioUtil.death.playAudio()
             return true
         }
 
@@ -341,13 +347,12 @@ class Game {
     }
 
     func createNode() {
-        
         if ProcessInfo.processInfo.environment["SHOW_GRID"] != nil {
             let grid = GridShape()
             grid.shape.position = Constants.center
             gameNode.addChild(grid.shape)
         }
-        
+
         gameNode.addChild(pellets.node)
         gameNode.addChild(pacMan.node)
         gameNode.addChild(blinky.node)
@@ -399,12 +404,12 @@ class Game {
         }
 
         if state == .die2 {
-            let _ = pacMan.update(game: self)
+            _ = pacMan.update(game: self)
         } else {
             collisionDetection()
         }
         // Chase or scatter?
-        if state == .play && scaredTimer == 0 && signalPacManHit == false  {
+        if state == .play && scaredTimer == 0 && signalPacManHit == false {
             let controlSystem = chaseScatterPattern[chaseScatterPatternIndex].0
             for ghost in ghosts {
                 ghost.requestControlSystem(controlSystem, .alive)
@@ -417,7 +422,7 @@ class Game {
                 chaseScatterTimer = chaseScatterPattern[chaseScatterPatternIndex].1
             }
         }
-        
+
         pellets.update()
 
         if state == .ready || state == .play || state == .die || state == .die2 || state == .prepare {
@@ -449,7 +454,7 @@ class Game {
         }
 
         collided:
-        for ghost in ghosts {
+            for ghost in ghosts {
             doRepeat = true
             while doRepeat {
                 doRepeat = ghost.update(game: self)
@@ -467,6 +472,7 @@ class Game {
                     continue
                 }
                 if ghost.visual == .scared {
+                    AudioUtil.eatghost.playAudio()
                     ghost.requestControlSystem(.headingHome, .eaten)
                     eatenWaitTimer = Constants.eatenWaitTime
                 } else if ghost.visual == .alive {
@@ -492,7 +498,7 @@ class Game {
     func handleButtonA(pressed: Bool) {
         switch pressed {
         case true:
-            if buttonAWasReleased {  // Flip flop
+            if buttonAWasReleased { // Flip flop
                 signalButtonAPressed = true
                 buttonAWasReleased = false
             }

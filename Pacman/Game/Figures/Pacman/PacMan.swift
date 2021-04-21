@@ -96,6 +96,7 @@ class PacMan: Figure {
                 game.eatenPellets += 1
                 if pellet is Energizer {
                     game.energize()
+                    AudioUtil.eatfruit.playAudio()
                 }
             }
         }
